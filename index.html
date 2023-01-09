@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="inicioSesion">
+        <h1>Login</h1>
+        <label for="txtUsuario">Usuario</label> 
+        <input type="text" id="txtUsuario">
+        <label for="txtContraseña">Contraseña</label>
+        <input type="password" id="txtContraseña">
+        <button id="btnEntrar">Entrar</button>
+        <p id="mensaje"></p>
+    </div>
+    <div id="divAdmin" class="ocultar">
+        <h1 id="adminTitulo"></h1>
+        <button id="btnAgregarPropiedad">Agregar Propiedad</button>
+        <button id="btnEditarPropiedad">Editar Propiedad</button>
+        <button id="listIntereses">Listar intereses</button>
+        <button id="cerrarSesionAdmin">Cerrar sesion</button>
+        <div id="altaPropiedad" class="ocultar">
+            <br>
+            <label for="tipo">Tipo</label>
+            <input type="text" id="tipo">
+            <br><br>
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion">
+            <br><br>
+            <label for="padron">Padron</label>
+            <input type="number" id="padron">
+            <br><br>
+            <label for="monto">Monto</label>
+            <input type="number" id="monto">
+            <br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br><br>
+            <label for="imagen">Imagen</label>
+            <input type="text" id="imagen">
+            <br><br>
+            <button id="btnSubirPropiedad">Subir Propiedad</button>
+        </div>
+        <div id="editarPropiedad" class="ocultar">
+            <h2>Elegir propiedad</h2>
+            <select name="selectEditar" id="selectEditar"></select>
+            <h2>Editar caracteristicas</h2>
+            <label for="editarCodigo">Codigo</label>
+            <input type="text" id="editarCodigo" readonly>
+            <br><br>
+            <label for="editarTipo">Tipo</label>
+            <input type="text" id="editarTipo">
+            <br><br>
+            <label for="editarDireccion">Direccion</label>
+            <input type="text" id="editarDireccion">
+            <br><br>
+            <label for="editarPadron">Padron</label>
+            <input type="number" id="editarPadron">
+            <br><br>
+            <label for="editarMonto">Monto</label>
+            <input type="number" id="editarMonto">
+            <br><br>
+            <label for="editarNombre">Nombre</label>
+            <input type="text" id="editarNombre">
+            <br><br>
+            <label for="editarImagen">Imagen</label>
+            <input type="text" id="editarImagen">
+            <br><br>
+            <button id="btnCompletarEditadoPropiedad">Editar Propiedad</button>
+        </div>
+        <div id="divInteresesAdmin" class="ocultar"></div>
+    </div>
+    </div>
+    <div id="divCliente" class="ocultar">
+       <h1 id="clienteTitulo"></h1>
+       <button id="btnPropiedades">Propiedades</button>
+        <button id="btnIntereses">Intereses</button>
+        <button id="cerrarSesionCliente">Cerrar sesion</button>
+        <div id="divPropiedades" class="ocultar">
+            <br>
+            <select id="filtroPropiedades" class="ocultar"></select>
+            <div id="divMostrarPropiedades"></div>
+        </div>
+        <div id="divVerMas" class="ocultar">
+            
+        </div>
+    </div>
+
+
+
+    <script src="javaScript/baseDeDatos.js"></script>
+    <script src="javaScript/codigo.js"></script>
+</body>
+</html>
